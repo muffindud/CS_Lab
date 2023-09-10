@@ -15,7 +15,7 @@ def encrypt(message: str, message_key: int, upper_alphabet) -> str:
         try:
             encrypted_code.append((upper_alphabet.index(c) + message_key) % 26)
         except ValueError:
-            raise ValueError("Message must contain only letters")
+            raise ValueError("Message must contain only letters and spaces")
 
     encrypted_message = ""
     for i in encrypted_code:
@@ -61,7 +61,7 @@ def encrypt_caesar(message: str, message_key: int, keyword=None) -> dict:
 # Caesar cipher decryption implementation
 def decrypt(encrypted_message: str, message_key: int, upper_alphabet) -> str:
     message = ""
-    for c in encrypted_message:
+    for c in encrypted_message.upper():
         try:
             message += upper_alphabet[(upper_alphabet.index(c) - message_key) % 26]
         except ValueError:
