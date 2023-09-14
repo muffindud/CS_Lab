@@ -56,7 +56,7 @@ def encrypt_caesar(message: str, message_key: int, keyword=None) -> dict:
             "encrypted_message": encrypt(message, message_key, keyword_alphabet),
             "key": message_key,
             "keyword": keyword,
-            "alphabet": upper_alphabet
+            "alphabet": keyword_alphabet
         }
 
 
