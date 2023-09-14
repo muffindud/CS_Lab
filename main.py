@@ -58,7 +58,7 @@ def main():
                 print("Decrypted message:", output["message"])
                 print("Key:", output["key"])
                 print("Keyword:", output["keyword"])
-                print("Alphabet:", outupt["alphabet"])
+                # print("Alphabet:", output["alphabet"])
 
             print()
 
