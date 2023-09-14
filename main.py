@@ -30,7 +30,8 @@ def main():
                 print("Encrypted message:", output["encrypted_message"])
                 print("Key:", output["key"])
                 print("Keyword:", output["keyword"])
-                
+                print("Alphabet:", output["alphabet"])
+
             print()
 
         elif mode == "D":
@@ -57,6 +58,7 @@ def main():
                 print("Decrypted message:", output["message"])
                 print("Key:", output["key"])
                 print("Keyword:", output["keyword"])
+                print("Alphabet:", outupt["alphabet"])
 
             print()
 
