@@ -1,0 +1,52 @@
+each new setting of alberti's disk brought into play a new cipheralphabet, in which both the
+plaintext and the ciphertext equivalents arechanged in regard to one another. there are as
+many of these alphabetsas there are positions of his disk, and this multiplicity means that
+albertihere devised the first polyalphabetic cipher.this achievement—critical in the
+history of cryptology —alberti thenadorned by another remarkable invention: enciphered code.
+it was forthis that he had put numbers in the outer ring. in a table he permutedthe numbers
+1 to 4 in two-, three-, and four-digit groups, from 11 to4444, and used these as 336 codegroups
+for a small code. "in this table,according to agreement, we shall enter in the various lines at
+thenumbers whatever complete phrases we please, for example,corresponding to 12, 'we have made
+ready the ships which we promisedand supplied them with troops and grain.' " these code values
+did notchange, any more than the mixed alphabet of the disk did. but the digitsresulting
+from an encoding were then enciphered with the disk just as ifthey were plaintext letters.
+in alberti's words, "these numbers i theninsert in my message according to the formula of the
+cipher, representingthem by the letters that denote these numbers." these numbers
+thuschanged their ciphertext equivalents as the disk turned. hence 341,perhaps meaning
+"pope," might become mrp at one position and fco atanother. this constitutes an excellent
+form of enciphered code, and justhow precocious alberti was may be seen by the fact that the
+majorpowers of the earth did not begin to encipher their code messages until400 years later,
+near the end of the 19th century, and even then theirsystems were much simpler than
+this.alberti's three remarkable firsts—the earliest western exposition ofcryptanalysis,
+the invention of polyalphabetie substitution, and theinvention of enciphered code—make
+him the father of westerncryptology. but although his treatise was published in italian in
+acollection of his works in 1568, and although his ideas were absorbed bypapal cryptologists and
+perhaps influenced the science's development,they never had the dynamic impact that such
+prodigiousaccomplishments ought to have produced. symonds' evaluation of hiswork in general
+may both explain why and summarize the modern view of his cryptological contributions:"this
+man of many-sided genius came into the world too soon for theperfect exercise of his singular
+faculties. whether we regard him from thepoint of view of art, of science, or of literature, he
+occupies in eachdepartment the position of precursor, pioneer, and indicator. alwaysoriginal
+and always fertile, he prophesied of lands he was not privilegedto enter, leaving the memory of
+dim and varied greatness rather than anysolid monument behind him."polyalphabeticity took
+another step forward in 1518, with theappearance of the first printed book on cryptology,
+written by one of themost famous intellectuals of his day. this was johannes trithemius,
+abenedictine monk whose dabbling in alchemy and other mystic powersmade him one of the most
+revered figures in occult science, while hismore solid scholarship won him the title of
+"father of bibiliography." in1518, a year and a half after his death, his polygraphiae libri sex,
+loannistrithemii abbatis peapolitani, quondam spanheimensis, ad maximilianumcaesarem ("six
+books of polygraphy, by johannes trithemius, abbot atwurzburg, formerly at spanheim, for the
+emperor maximilian") waspublished. by far the bulk of the volume consists of the columns
+ofwords printed in large gothic type that trithemius used in his systems ofcryptography.
+but in the work's book v appears, for the first time, thesquare table, or tableau. this is the
+elemental form of polyalphabeticsubstitution, for it exhibits all at once all the cipher
+alphabets in aparticular system. these are usually all the same sequence of letters,
+butshifted to different positions in relation to the plaintext alphabet, as inalberti's
+disk the inner alphabet assumed different positions in regard tothe outer alphabet. the
+tableau sets them out in orderly fashion—thealphabets of the successive positions laid
+out in rows one below theother, each alphabet shifted one place to the left of the one above.
+eachrow thus offers a different set of cipher substitutes to the letters of
+theplaintext alphabet at the top. since there can be only as many rows asthere are letters in
+the alphabet, the tableau is square.the simplest tableau is one that uses the normal
+alphabet in variouspositions as the cipher alphabets. each cipher alphabet produces, inother
+words, a caesar substitution.
