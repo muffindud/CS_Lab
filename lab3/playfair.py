@@ -8,6 +8,12 @@ def encrypt(message: str, keyword: str) -> dict:
     encryption_text = ""
     encryption_matrix = []
 
+    if any(letter not in upper_alphabet for letter in message):
+        raise ValueError("The message must contain only letters and spaces.")
+
+    if any(letter not in upper_alphabet for letter in keyword):
+        raise ValueError("The keyword must contain only letters and spaces.")
+
     # Remove duplicate letters from the message pairs
     i = 0
     while i < len(message) - 1:
@@ -58,5 +64,19 @@ def encrypt(message: str, keyword: str) -> dict:
     return {"message": message, "ciphertext": ciphertext, "keyword": keyword, "encryption_text": encryption_text}
 
 
-def decrypt(ciphertext: str, keyword: str) -> str:
-    ...
+def decrypt(ciphertext: str, keyword: str) -> dict:
+    ciphertext = ciphertext.replace(" ", "").upper().replace("Â", "Î")
+    keyword = keyword.replace(" ", "").upper().replace("Â", "Î")
+    encryption_text = ""
+    encryption_matrix = []
+
+    if any(letter not in upper_alphabet for letter in ciphertext):
+        raise ValueError("The ciphertext must contain only letters and spaces.")
+
+    if ciphertext % 2 == 1:
+        raise ValueError("The ciphertext must have an even number of letters.")
+
+    if any(letter not in upper_alphabet for letter in keyword):
+        raise ValueError("The keyword must contain only letters and spaces.")
+
+    
