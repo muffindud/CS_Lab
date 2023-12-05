@@ -1,7 +1,60 @@
-Text = Catlabuga Corneliu
+Message = each new setting of alberti's disk brought into play a new cipheralphabet, in which both the plaintext and the ciphertext equivalents arechanged in regard to one another. there are as many of these alphabetsas there are positions of his disk, and this multiplicity means that albertihere devised the first polyalphabetic cipher.this achievement—critical in the history of cryptology —alberti thenadorned by another remarkable invention: enciphered code. it was forthis that he had put numbers in the outer ring. in a table he permutedthe numbers 1 to 4 in two-, three-, and four-digit groups, from 11 to4444, and used these as 336 codegroups for a small code. "in this table,according to agreement, we shall enter in the various lines at thenumbers whatever complete phrases we please, for example,corresponding to 12, 'we have made ready the ships which we promisedand supplied them with troops and grain.' " these code values did notchange, any more than the mixed alphabet of the disk did. but the digitsresulting from an encoding were then enciphered with the disk just as ifthey were plaintext letters. in alberti's words, "these numbers i theninsert in my message according to the formula of the cipher, representingthem by the letters that denote these numbers." these numbers thuschanged their ciphertext equivalents as the disk turned. hence 341,perhaps meaning "pope," might become mrp at one position and fco atanother. this constitutes an excellent form of enciphered code, and justhow precocious alberti was may be seen by the fact that the majorpowers of the earth did not begin to encipher their code messages until400 years later, near the end of the 19th century, and even then theirsystems were much simpler than this.alberti's three remarkable firsts—the earliest western exposition ofcryptanalysis, the invention of polyalphabetie substitution, and theinvention of enciphered code—make him the father of westerncryptology. but although his treatise was published in italian in acollection of his works in 1568, and although his ideas were absorbed bypapal cryptologists and perhaps influenced the science's development,they never had the dynamic impact that such prodigiousaccomplishments ought to have produced. symonds' evaluation of hiswork in general may both explain why and summarize the modern view of his cryptological contributions:"this man of many-sided genius came into the world too soon for theperfect exercise of his singular faculties. whether we regard him from thepoint of view of art, of science, or of literature, he occupies in eachdepartment the position of precursor, pioneer, and indicator. alwaysoriginal and always fertile, he prophesied of lands he was not privilegedto enter, leaving the memory of dim and varied greatness rather than anysolid monument behind him."polyalphabeticity took another step forward in 1518, with theappearance of the first printed book on cryptology, written by one of themost famous intellectuals of his day. this was johannes trithemius, abenedictine monk whose dabbling in alchemy and other mystic powersmade him one of the most revered figures in occult science, while hismore solid scholarship won him the title of "father of bibiliography." in1518, a year and a half after his death, his polygraphiae libri sex, loannistrithemii abbatis peapolitani, quondam spanheimensis, ad maximilianumcaesarem ("six books of polygraphy, by johannes trithemius, abbot atwurzburg, formerly at spanheim, for the emperor maximilian") waspublished. by far the bulk of the volume consists of the columns ofwords printed in large gothic type that trithemius used in his systems ofcryptography. but in the work's book v appears, for the first time, thesquare table, or tableau. this is the elemental form of polyalphabeticsubstitution, for it exhibits all at once all the cipher alphabets in aparticular system. these are usually all the same sequence of letters, butshifted to different positions in relation to the plaintext alphabet, as inalberti's disk the inner alphabet assumed different positions in regard tothe outer alphabet. the tableau sets them out in orderly fashion—thealphabets of the successive positions laid out in rows one below theother, each alphabet shifted one place to the left of the one above. eachrow thus offers a different set of cipher substitutes to the letters of theplaintext alphabet at the top. since there can be only as many rows asthere are letters in the alphabet, the tableau is square.the simplest tableau is one that uses the normal alphabet in variouspositions as the cipher alphabets. each cipher alphabet produces, inother words, a caesar substitution.
 
-Hex = 4361746C616275676120436F726E656C6975
+(validator)
+SHA-256(Message) = 29fa156225e639a107657503d5e62a8ffcdf623c786c52f3dcaeec2ca32ef5eb
 
-Decimal = 5869685300210033754487172484267118152149365
+Party1-1:
+    1. Hash the message using SHA-256
+    2. Transform the hash into a decimal number
+    2. Generate p
+    3. Generate g
+    4. Generate the private key PrivK1
+    5. Compute the public key PubK1
 
+    (validator)
+    SHA-256(Message) = 29fa156225e639a107657503d5e62a8ffcdf623c786c52f3dcaeec2ca32ef5eb
+
+    (decimal equivalent of validator)
+    h = 18986686140847837898350195524353564974279753197334242309549510333764276778475
+
+    p = 32317006071311007300153513477825163362488057133489075174588434139269806834136210002792056362640164685458556357935330816928829023080573472625273554742461245741026202527916572972862706300325263428213145766931414223654220941111348629991657478268034230553086349050635557712219187890332729569696129743856241741236237225197346402691855797767976823014625397933058015226858730761197532436467475855460715043896844940366130497697812854295958659597567051283852132784468522925504568272879113720098931873959143374175837826000278034973198552060607533234122603254684088120031105907484281003994966956119696956248629032338072839127039
+
+    g = 2
+
+    PrivK1 = 857
+
+    PubK1 = g^PrivK1 mod p = 960962154087001629436308185025184878247905227974336452694771122017616840015261658617268505418282416748614914455642299215255384405286687137505466996049907860485085046091635529899088428785810612776957410293491536147754283397719630991265870577566668501257551872
+
+Public-1:
+    Party1 -(p, g, PubK1)-> Party2
+
+Party2-1:
+    1. Generate the private key PrivK2
+    2. Compute the public key PubK2
+    3. Compute the shared secret s1
+
+    PrivK2 = 553
+
+    PubK2 = g ^ PrivK2 mod p = 29484081443918291814387145163970850710288447034503440846689111720668938768688662906922865040450459121417721679927842538279457692421287442441886205089317937841010900992
+
+    s2 = PubK1 ^ PrivK2 mod p = 9907038685706053224157685973045196635571714120550208077399337427821707612157925893132054718321971021586248494806234700540460540593198261741390268216270769723178155660533413914105930228011722901208909071624966874063537086844383728342883151416333584459399406964971054838949311524101283027043733480860463330638931272406499727076409990034897344879820730982691638340791415380726295677128559893831205767921680511924703343733545714091805960245769807041287292330427720165368981809377841278540697970266281240341042615171642252846136570185974749221460243101742576287999231232496797501345784917598858052626582627337474593249904
+
+Public-2:
+    Party2 -(PubK2)-> Party1
+
+Party1-2:
+    1. Compute the shared secret s1
+    2. Sign h using the shared secret s1
+
+    s1 = PubK2 ^ PrivK1 mod p = 9907038685706053224157685973045196635571714120550208077399337427821707612157925893132054718321971021586248494806234700540460540593198261741390268216270769723178155660533413914105930228011722901208909071624966874063537086844383728342883151416333584459399406964971054838949311524101283027043733480860463330638931272406499727076409990034897344879820730982691638340791415380726295677128559893831205767921680511924703343733545714091805960245769807041287292330427720165368981809377841278540697970266281240341042615171642252846136570185974749221460243101742576287999231232496797501345784917598858052626582627337474593249904
+
+    Sig(h) = h ^ s1 mod p = 24559747782394369061639727218397382963136804856058540019191504014753618437142569725271600949557197822310120086795991442936405448098209902458657295129798019422749665677451270592470222636310406702274967135645758445178110209598420189499896061765270930523477582290768291876869778609756509882920019802456549524876699536607605287353151822808995207784082473229946916981353630483496887529839204774117524239215406906662380343475828750707094570380934851896199525469012854304081812316138156504868380702291526562149587294993117969124871220439928575337627413722750903997624903433663500368843081114280750276957561413250908251373055
+
+Public-3:
+    Party1 -(Sig(h))-> Party2
+
+Party2-2:
+    1. Check the signature using the shared secret s2
+
+    h = Sig(h) * s2 ^ (-1) mod p = 24559747782394369061639727218397382963136804856058540019191504014753618437142569725271600949557197822310120086795991442936405448098209902458657295129798019422749665677451270592470222636310406702274967135645758445178110209598420189499896061765270930523477582290768291876869778609756509882920019802456549524876699536607605287353151822808995207784082473229946916981353630483496887529839204774117524239215406906662380343475828750707094570380934851896199525469012854304081812316138156504868380702291526562149587294993117969124871220439928575337627413722750903997624903433663500368843081114280750276957561413250908251373055 * 26350867212830887760849991918014221600460265065900781720755184523568316380596000294074760603139270140175036020854707114396596508928316327118716652925700565097629452077358807594352335026062131038991671445268413028798111764709267017524206833452469736404668235480996125529194245850035934676515820147425167592995906246907090775112625959322544548583510222676494651579912679932990521576872345005350298483951537052590553255628599419249217269229853007526856540320824317437438210219711434105474749691401851191772987602786137457905240198886055342822009911279659371802924375264285280586003089444298964810839607355896606108532244 mod p = 
 
